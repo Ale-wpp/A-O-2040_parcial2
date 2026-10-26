@@ -1,0 +1,863 @@
+/* ---------- GENERAL  ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;      
+  scroll-padding-top: 100px;    
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #072410;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-family: 'Outfit', sans-serif;
+}
+
+
+/* ---------- ENCABEZADO ---------- */
+
+.header {
+  position: sticky;             
+  top: 0;
+  z-index: 20;
+  height: 135px;
+  background-color: white;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 0 56px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #072410;
+}
+
+.globo {
+  width: 67px;
+  height: 67px;
+}
+
+/* Las letras "ID" con degradado */
+.logo b,
+.app-logo b,
+.f-logo b {
+  background: linear-gradient(90deg, #0abcca, #6a8ff0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: #415ffb;
+}
+
+
+/* ---------- PORTADA ---------- */
+
+.titulo {
+  display: grid;
+  grid-template-columns: 612px 580px;   
+  gap: 23px;
+  justify-content: center;
+  padding: 46px 0 100px 0;
+}
+
+.titulo-texto {
+  background-color: #415ffb;
+  border-radius: 55px;
+  padding: 98px 68px;
+  height: 548px;
+  color: white;
+}
+
+.pregunta {
+  font-family: 'Outfit', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #dfe7ff;
+}
+
+.titulo h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 130px;
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -2px;
+  margin: 48px 0 18px 0;
+}
+
+.titulo h1 span {
+  display: block;
+  font-size: 72px;
+  letter-spacing: 0;
+  color: #a6b5fc;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.12;
+}
+
+.titulo-img {
+  width: 580px;
+  height: 544px;
+  object-fit: cover;            
+  border-radius: 55px;
+  margin-top: 4px;
+}
+
+
+/* ---------- EL MUNDO EN 2040 ---------- */
+
+.mundo {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;               
+  display: grid;
+  grid-template-columns: 1fr 540px;
+  gap: 50px;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.mundo h2 {
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.mundo article {
+  border-top: 1px solid #072410;
+  padding: 30px 0 40px 0;
+}
+
+.mundo article:last-child {
+  padding-bottom: 0;
+}
+
+.mundo h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.mundo p {
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+
+/* ---------- FORO ---------- */
+
+.foro {
+  background-color: #415ffb;
+  color: white;
+  padding: 65px 0;
+}
+
+.foro-caja {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 376px;   
+  gap: 100px;
+}
+
+.foro-texto h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.foro-sub {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 40px 0;
+}
+
+.foro blockquote {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.4;
+  min-height: 195px;
+}
+
+.foro-autor {
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 22px;
+}
+
+.foro hr {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  width: 612px;
+  max-width: 100%;
+  margin: 22px 0 18px 0;
+}
+
+.foro-vive {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.35;
+  max-width: 560px;
+  min-height: 46px;
+}
+
+.foro-controles {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* Botones redondos de las flechas */
+.flecha {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flecha svg {
+  width: 28px;
+}
+
+.flecha:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#foroContador {
+  font-size: 20px;
+  font-weight: 700;
+  min-width: 30px;
+  text-align: center;
+}
+
+.foro-foto {
+  width: 376px;
+  height: 664px;
+  object-fit: cover;
+}
+
+/* Animación al cambiar de personaje */
+.foro-texto,
+.foro-foto {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* JavaScript le pone esta clase por un momento y así se desvanece */
+.cambiando {
+  opacity: 0;
+  transform: translateX(18px);
+}
+
+
+/* ---------- SEGURIDAD E IDENTIDAD ---------- */
+
+.seguridad {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 78px 0 60px 0;
+}
+
+.seguridad h2 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.seg-sub {
+  font-size: 16px;
+  margin: 8px 0 52px 0;
+}
+
+.tarjetas-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 63px;
+}
+
+/* seguridad e identidad (tarjetas) */
+.tarjeta {
+  border-radius: 26px;
+  padding-top: 18px;
+}
+
+.tarjeta.teal {
+  background-color: #0abcca;
+}
+
+.tarjeta.azul {
+  background-color: #415ffb;
+}
+
+.tarjeta > div {
+  background-color: white;
+  border: 1px solid #415ffb;
+  border-radius: 26px;
+  height: 288px;
+  padding-top: 36px;
+  text-align: center;
+}
+
+.tarjeta h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.tarjeta p {
+  font-size: 24px;
+  line-height: 31px;
+  color: black;
+}
+
+.pildora {
+  width: 100%;
+  max-width: 743px;
+  margin: 70px auto 0 auto;
+  background-color: #0abcca;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+}
+
+
+/* ---------- ¿CÓMO SOLUCIONARLO? (LA APP) ---------- */
+
+.app {
+  background-image: url(images/fondo-app.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #dafcee;
+  display: grid;
+  grid-template-columns: 745px 258px;   
+  gap: 61px;
+  justify-content: center;
+  padding: 60px 0 62px 0;
+  margin-top: 60px;
+}
+
+.app h2 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.app-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.app-desc {
+  font-size: 15px;
+  line-height: 1.35;
+  max-width: 610px;
+  margin: 14px 0 30px 0;
+}
+
+.funciones {
+  display: grid;
+  grid-template-columns: 228px 228px 228px;
+  gap: 16px;
+  margin-bottom: 34px;
+}
+
+.func {
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 1px solid;
+  border-top-width: 11px;               
+  border-radius: 24px;
+  padding: 20px 20px 0 20px;
+  height: 135px;
+}
+
+.func:hover {
+  transform: translateY(-4px);          
+}
+
+.func h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.func p {
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.f-teal {
+  border-color: #0abcca;
+}
+
+.f-azul {
+  border-color: #415ffb;
+}
+
+.f-morado {
+  border-color: #8963ee;
+}
+
+.consejos {
+  background-color: #dafcee;
+  color: #072410;
+  border-radius: 32px;
+  padding: 20px 28px;
+  height: 129px;
+}
+
+.consejos h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.consejos-fila {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.consejos-fila div {
+  padding: 0 14px;
+  border-left: 1.5px solid #0abcca;     
+}
+
+.consejos-fila div:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.consejos b {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.consejos p {
+  font-size: 8.5px;
+  line-height: 1.3;
+}
+
+.celular {
+  width: 258px;
+  height: 530px;
+  align-self: center;
+}
+
+
+/* ---------- NOTICIAS ---------- */
+
+.noticias {
+  background-color: #072410;
+  color: white;
+  padding: 60px 0 100px 0;
+}
+
+.noticias h2 {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto 58px auto;
+  font-size: 56px;
+  font-weight: 700;
+  color: #dafcee;
+}
+
+.noticias-grid {
+  width: 92%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.noticias article {
+  padding: 0 20px 0 56px;
+  border-left: 1px solid #0abcca;
+}
+
+.noticias article:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.noticias h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #0abcca;
+  margin-bottom: 22px;
+}
+
+.noticias p {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+
+/* ---------- SERIE FOTOGRÁFICA ---------- */
+
+.serie {
+  width: 92%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 62px 0 52px 0;
+}
+
+.serie h2 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.serie-sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;            /* 4 columnas */
+  grid-template-rows: 170px 170px 170px 173px;       /* 4 filas */
+  gap: 6px;
+}
+
+.galeria figure {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.galeria figure:hover img {
+  transform: scale(1.05);               
+}
+
+/* El texto que aparece sobre cada foto */
+.galeria figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 9px 11px;
+  background-color: rgba(40, 40, 40, 0.55);
+  color: white;
+  font-size: 12.5px;
+  line-height: 1.2;
+}
+
+.galeria figure:hover figcaption {
+  background-color: rgba(7, 36, 16, 0.8);
+}
+
+/* La foto grande ocupa 3 columnas y 3 filas */
+.g-grande {
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}
+
+.g-grande figcaption {
+  font-size: 15px;
+  padding: 12px 14px;
+}
+
+
+/* ---------- PIE DE PÁGINA ---------- */
+
+.footer {
+  background-color: #072410;
+  border-top: 5px solid #0abcca;
+  color: #dafcee;
+  padding: 75px 0 36px 0;
+}
+
+.footer-fila,
+.footer hr,
+.footer-base {
+  width: 92%;
+  max-width: 1092px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.f-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.f-lema {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 430px;
+  margin-top: 6px;
+}
+
+.contacto {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.contacto h3 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.contacto p {
+  font-size: 24px;
+  margin: 4px 0 14px 0;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #0abcca;
+  color: #072410;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 17px 38px;
+  border-radius: 40px;
+}
+
+.boton:hover {
+  background-color: #13d3e3;
+}
+
+.correo {
+  display: block;
+  margin-top: 22px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.footer hr {
+  border: 0;
+  height: 1px;
+  background-color: rgba(218, 252, 238, 0.6);
+  margin-top: 70px;
+  margin-bottom: 34px;
+}
+
+.footer-base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-base a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-base svg {
+  width: 17px;
+  height: 24px;
+}
+
+
+/* ---------- VERSIÓN PARA CELULAR Y TABLET ---------- */
+
+@media (max-width: 1250px) {
+
+  .header {
+    height: auto;
+    min-height: 100px;
+    padding: 12px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 26px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 30px 4% 60px 4%;
+  }
+
+  .hero-texto {
+    height: auto;
+    padding: 60px 36px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 96px;
+  }
+
+  .subtitulo {
+    font-size: 28px;
+  }
+
+  .mundo,
+  .foro-caja,
+  .app {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mundo {
+    padding-bottom: 60px;
+  }
+
+  .foro-foto {
+    width: 100%;
+    max-width: 376px;
+    height: 520px;
+  }
+
+  .foro blockquote {
+    font-size: 30px;
+    min-height: 0;
+  }
+
+  .tarjetas-2 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .app {
+    padding: 50px 4%;
+    justify-items: center;
+  }
+
+  .funciones {
+    grid-template-columns: 1fr;
+  }
+
+  .func {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .consejos {
+    height: auto;
+  }
+
+  .consejos-fila {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .consejos-fila div {
+    border-left: none;
+    padding: 0;
+  }
+
+  .consejos p {
+    font-size: 11px;
+  }
+
+  .noticias-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .noticias article {
+    padding: 0;
+    border-left: none;
+  }
+
+  .galeria {
+    grid-template-rows: none;
+    grid-auto-rows: 150px;
+  }
+
+  .g-grande {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: 260px;
+  }
+
+  .footer-fila {
+    flex-direction: column;
+  }
+
+  .contacto {
+    margin-right: 0;
+  }
+}

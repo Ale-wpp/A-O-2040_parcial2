@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutentID · Mundo 2040</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- ============ ENCABEZADO ============ -->
+    <header class="header" id="inicio">
+      <a class="logo" href="#inicio" aria-label="AutentID">
+        <svg class="globo" viewBox="0 0 67 67"><circle cx="33.5" cy="33.5" r="33.5" fill="#072410"/><g fill="none" stroke="#dafcee" stroke-width="2"><circle cx="33.5" cy="33.5" r="18"/><ellipse cx="33.5" cy="33.5" rx="8" ry="18"/><path d="M15.5 33.5h36M18 24.5h31M18 42.5h31M33.5 15.5v36"/></g></svg>
+        <span>Autent<b>ID</b></span>
+      </a>
+      <nav class="menu">
+        <a href="#mundo">El mundo</a>
+        <a href="#foro">Foro</a>
+        <a href="#seguridad">Seguridad e identidad<br>(Antes y despues)</a>
+        <a href="#app">¿Comó solucionarlo?<br>AutentID</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#serie">Serie fotográfica</a>
+      </nav>
+    </header>
+
+    <!-- ============ PORTADA ============ -->
+    <section class="titulo">
+      <div class="titulo-texto">
+        <p class="pregunta">¿Ver es suficiente para creer?</p>
+        <h1><span>AÑO</span>2040</h1>
+        <p class="subtitulo">Suplantación de Identidades y Clonación Digital No Autorizada</p>
+      </div>
+      <img class="titulo-img" src="images/titulo.jpg" alt="Collage de un rostro mitad humano y mitad robot">
+    </section>
+
+    <!-- ============ EL MUNDO EN 2040 ============ -->
+    <section class="mundo" id="mundo">
+      <h2>EL MUNDO<br>EN 2040</h2>
+      <div class="mundo-lista">
+        <article><h3>La ia en la vida diaria</h3><p>Dejó de ser cosa de especialistas. Acompaña las decisiones, comunicaciones y trabajos de todos: entiende la voz, reconoce rostros y genera imágenes.</p></article>
+        <article><h3>La identidad digital</h3><p>Gran parte de la vida ocurre en entornos digitales. Perfiles, avatares y datos biométricos valen casi lo mismo que la identidad física.</p></article>
+        <article><h3>Identidades sintéticas</h3><p>Un rostro puede recrearse, una voz sintetizarse y una persona puede estar representada por un avatar que responde por ella.</p></article>
+      </div>
+    </section>
+
+    <!-- ============ FORO (carrusel interactivo) ============ -->
+    <section class="foro" id="foro">
+      <div class="foro-caja">
+        <div class="foro-texto" id="foroTexto">
+          <h2>Foro de 2040</h2>
+          <p class="foro-sub">Lo que piensan y cómo viven quienes habitan este mundo.</p>
+          <blockquote id="foroCita"></blockquote>
+          <p class="foro-autor" id="foroAutor"></p>
+          <hr>
+          <p class="foro-vive" id="foroVive"></p>
+          <div class="foro-controles">
+            <button class="flecha" id="btnPrev" aria-label="Anterior"><svg viewBox="0 0 40 12"><path d="M39 6H2M7 1L1.5 6 7 11" fill="none" stroke="#fff" stroke-width="1.3"/></svg></button>
+            <span id="foroContador">1/4</span>
+            <button class="flecha" id="btnNext" aria-label="Siguiente"><svg viewBox="0 0 40 12"><path d="M1 6h37M33 1l5.500 5L33 11" fill="none" stroke="#fff" stroke-width="1.3"/></svg></button>
+          </div>
+        </div>
+        <img class="foro-foto" id="foroFoto" src="images/foro-1.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- ============ SEGURIDAD E IDENTIDAD ============ -->
+    <section class="seguridad" id="seguridad">
+      <h2>Seguridad e identidad</h2>
+      <p class="seg-sub">Podemos observar la diferencia de los años al conocer que se necesita antes y después para proteger nuestra identidad.</p>
+      <div class="tarjetas-2">
+        <div class="tarjeta teal"><div><h3>Antes</h3><p>Contraseña<br>Documento<br>Fotografía</p></div></div>
+        <div class="tarjeta azul"><div><h3>En 2040</h3><p>Rostro<br>Voz<br>Biometría<br>Comportamiento<br>Identidad digital</p></div></div>
+      </div>
+      <div class="pildora">Incluso esos elementos pueden ser manipulados.</div>
+    </section>
+
+    <!-- ============ ¿CÓMO SOLUCIONARLO? / APP ============ -->
+    <section class="app" id="app">
+      <div class="app-izq">
+        <h2>¿Cómo solucionarlo?</h2>
+        <p class="app-logo">Autent<b>ID</b></p>
+        <p class="app-desc">Esta app ayudará a comprobar al instante si la persona con la que estás hablando por llamada o video es un ser humano real o una voz o rostro creado con inteligencia artificial.</p>
+        <div class="funciones">
+          <div class="func f-teal"><h3>Detector de clones</h3><p>Busca en internet a diario y te avisa si alguien usa tu cara o tu voz con IA sin tu permiso.</p></div>
+          <div class="func f-azul"><h3>Sello de llamada</h3><p>Un filtro de seguridad invisible en tus videollamadas que demuestra que eres tú y no un video falso.</p></div>
+          <div class="func f-morado"><h3>Firma humana</h3><p>Un código de seguridad al instante para autorizar pagos o contratos sin riesgo de engaños.</p></div>
+        </div>
+        <div class="consejos">
+          <h3>Consejos para protegerte</h3>
+          <div class="consejos-fila">
+            <div><b>Verifica por otro canal.</b><p>Si algo parece raro, devuelve la llamada a un número que ya conoces.</p></div>
+            <div><b>Acuerden una palabra clave.</b><p>Una voz clonada no puede conocer una palabra secreta.</p></div>
+            <div><b>No decidas bajo presión.</b><p>Las estafas con IA suelen exigir urgencia.</p></div>
+            <div><b>Pide una prueba en vivo.</b><p>Repetir una frase o mover la cabeza es difícil de falsificar.</p></div>
+          </div>
+        </div>
+      </div>
+      <img class="celular" src="images/celular.png" alt="App AutentID mostrando 'Eres tú. Verificado'">
+    </section>
+
+    <!-- ============ NOTICIAS ============ -->
+    <section class="noticias" id="noticias">
+      <h2>Noticias de 2040</h2>
+      <div class="noticias-grid">
+        <article><h3>Tecnología</h3><p>Empresas implementan nuevos sistemas para verificar identidades durante entrevistas virtuales.</p></article>
+        <article><h3>Seguridad</h3><p>La clonación de voz se convierte en una preocupación para instituciones financieras.</p></article>
+        <article><h3>Sociedad</h3><p>Los ciudadanos exigen mayor control sobre el uso de sus rostros y voces digitales.</p></article>
+      </div>
+    </section>
+
+    <!-- ============ SERIE FOTOGRÁFICA ============ -->
+    <section class="serie" id="serie">
+      <h2>Serie fotográfica</h2>
+      <p class="serie-sub">El mundo en 2040</p>
+      <div class="galeria">
+        <figure class="g-grande"><img src="images/foto-1.jpg" alt="Ciudad pixelada con celular y dinero"><figcaption>La identidad se vuelve una mezcla</figcaption></figure>
+        <figure><img src="images/foto-2.jpg" alt="Rostro con circuitos y memoria USB"><figcaption>Un rostro hecho de datos</figcaption></figure>
+        <figure><img src="images/foto-3.jpg" alt="Collage de rostros y oreja"><figcaption>Una entrevista que ocurre en pantalla</figcaption></figure>
+        <figure><img src="images/foto-4.jpg" alt="Hombre en ciudad futurista"><figcaption>Cuando una máquina imita a una persona</figcaption></figure>
+        <figure><img src="images/foto-5.jpg" alt="Boca, oreja y máscara"><figcaption>Nadie sabe quién está al otro lado</figcaption></figure>
+        <figure><img src="images/foto-6.jpg" alt="Mujer con película y ondas de sonido"><figcaption>Datos que reemplazan a la persona</figcaption></figure>
+        <figure><img src="images/foto-7.jpg" alt="Cerebro y toro de metal"><figcaption>Una mente convertida en información</figcaption></figure>
+        <figure><img src="images/foto-8.jpg" alt="Siluetas y ojos de vigilancia"><figcaption>Verificar una identidad ya no es sencillo</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ PIE DE PÁGINA ============ -->
+    <footer class="footer">
+      <div class="footer-fila">
+        <div>
+          <p class="f-logo">Autent<b>ID</b></p>
+          <p class="f-lema">Comprobar quién está al otro lado ya no es opcional en 2040</p>
+        </div>
+        <div class="contacto">
+          <h3>Contáctanos</h3>
+          <p>¿Tienes preguntas o ideas?</p>
+          <a class="boton" href="mailto:AutentID2040@gmail.com">Escríbenos</a>
+          <a class="correo" href="mailto:AutentID2040@gmail.com">AutentID2040@gmail.com</a>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-base">
+        <span>© 2026 AutentID. Todos los derechos reservados</span>
+        <a href="#inicio" id="arriba">Volver arriba <svg viewBox="0 0 18 24"><path d="M9 23V2M1 9.500L9 1.500 17 9.500" fill="none" stroke="#dafcee" stroke-width="1"/></svg></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
